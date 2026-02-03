@@ -41,7 +41,7 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img =cv2.imread("Eagle_in_Flight.jpg",cv2.IMREAD_COLOR")
+img =cv2.imread("pic1.jpg",cv2.IMREAD_COLOR")
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 ```
@@ -61,13 +61,13 @@ img.shape
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
 ```python
-img=cv2.imread("Eagle_in_Flight.jpg")
+img=cv2.imread("pic1.jpg")
 cv2.imwrite("Eagle.png",img)
 ```
 
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
 ```python
-img=cv2.imread('Eagle.png')
+img=cv2.imread('pic1.png')
 img_rgb = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 ```
 
@@ -103,14 +103,14 @@ plt.axis("off")
 
 #### 10. Read in the image ('Apollo-11-launch.jpg').
 ```python
-img=cv2.imread(r"C:\Users\admin\Downloads\Apollo-11-launch.jpg",cv2.IMREAD_COLOR)
+img=cv2.imread("pic1.jpg",cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_rgb.shape
 ```
 
 #### 11. Add the following text to the dark area at the bottom of the image (centered on the image):
 ```python
-text = cv2.putText(img_rgb, "Apollo 11 Saturn V Launch, July 16, 1969", (300, 700),cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)  
+text = cv2.putText(img_rgb, "Vik", (300, 700),cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)  
 plt.imshow(text, cmap='gray')  
 plt.title("New image")
 plt.show()  
@@ -131,7 +131,7 @@ plt.show()
 
 #### 14. Read the image ('Boy.jpg').
 ```python
-img =cv2.imread(r"C:\Users\admin\Downloads\boy.jpg",cv2.IMREAD_COLOR)
+img =cv2.imread("pic1.jpg",cv2.IMREAD_COLOR)
 img_rgb= cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 ```
 
@@ -215,68 +215,78 @@ plt.show()
 
 ## Output:
  1. Read and Display an Image.
-<img width="710" height="594" alt="image" src="https://github.com/user-attachments/assets/157308d2-87d5-4897-aff4-e97a715b6079" />
+![pic1](https://github.com/user-attachments/assets/f506cb24-4177-43df-8eb3-a63aa1b6dae6)
+
 
 
 
 2. Display the image using matplotlib imshow().
 
    
-<img width="710" height="593" alt="image" src="https://github.com/user-attachments/assets/4f612dd1-c38d-4ddc-aeb9-12e345457abb" />
+<img width="774" height="446" alt="image" src="https://github.com/user-attachments/assets/78175aaf-17b0-4916-9ce9-5c3e045a03d7" />
+
 
 
 
 3)Resize the image up by a factor of 2x.
 
+<img width="551" height="517" alt="image" src="https://github.com/user-attachments/assets/eb84f33e-81b8-4e3b-8eed-990ab76ed816" />
 
-<img width="307" height="411" alt="download" src="https://github.com/user-attachments/assets/4c7bc193-8ec4-4bc1-823d-d62dc5564399" />
 
 4)Flipped Horizontally
 
-<img width="714" height="594" alt="image" src="https://github.com/user-attachments/assets/fb77c703-0bb1-4214-ab27-b0fc71becd97" />
+<img width="610" height="517" alt="image" src="https://github.com/user-attachments/assets/4b0db8c2-7b39-4cf6-8b58-0846924fd5af" />
+
 
 
 
 5)New image.
 
 
-<img width="552" height="345" alt="download" src="https://github.com/user-attachments/assets/c437d153-3671-4573-82f6-adfba322321b" />
+<img width="781" height="429" alt="image" src="https://github.com/user-attachments/assets/6edc00ba-3f78-4a53-8e8a-b844dbadce38" />
+
 
 6)Annotated image.
 
-<img width="552" height="345" alt="download" src="https://github.com/user-attachments/assets/d12c4c3c-a6b9-48f0-b95e-d1a34c528e26" />
+<img width="768" height="428" alt="image" src="https://github.com/user-attachments/assets/e292528b-2729-4842-829d-cc97548a9e3d" />
+
 
 7)Brightness.
 
-<img width="827" height="244" alt="420662698-f34966ee-21f9-4441-bdd4-36c3da71b89d" src="https://github.com/user-attachments/assets/9f048762-76f8-4f7f-8e29-3afc2cff5714" />
+<img width="1109" height="212" alt="image" src="https://github.com/user-attachments/assets/09ba44b2-1a6c-4546-a105-64151a0d57f6" />
 
 
 
 8)Contrast.
 
-<img width="794" height="213" alt="download" src="https://github.com/user-attachments/assets/05559982-b002-47fe-a85a-24e870888d72" />
+<img width="1052" height="215" alt="image" src="https://github.com/user-attachments/assets/03c0e422-ced8-4ec3-a4b7-06076782fd51" />
+
 
 
 9)BGR Channel.
 
-<img width="794" height="213" alt="download" src="https://github.com/user-attachments/assets/22f8d9bd-0f4f-4032-b813-804525e289a4" />
+<img width="1018" height="224" alt="image" src="https://github.com/user-attachments/assets/d0f68444-1f2c-484e-a924-035e398dfb41" />
+
 
 
 
 10)Hue Channel.
 
 
-<img width="794" height="213" alt="download" src="https://github.com/user-attachments/assets/1b27d2ef-5eec-4f7f-8dd9-bfeb24f95248" />
+<img width="1053" height="219" alt="image" src="https://github.com/user-attachments/assets/42deefab-e4a7-4d2d-86ff-2cc489a0d91c" />
+
 
 11) Merged HSV Image.
 
-<img width="794" height="332" alt="download" src="https://github.com/user-attachments/assets/4e047572-4a8d-4c30-9c78-15fb3cc5c21f" />
+<img width="1078" height="323" alt="image" src="https://github.com/user-attachments/assets/c95f1304-9af3-43bd-ab99-7bec127d78ec" />
+
 
 12)Merge the R, G, B channels and display:
 
 
 
-<img width="406" height="327" alt="421166243-6db4d2a2-8b21-43e5-976a-8f199eebc8cc" src="https://github.com/user-attachments/assets/bdd1ffcf-5b53-42e4-8645-d63c18f80c7d" />
+<img width="1078" height="220" alt="image" src="https://github.com/user-attachments/assets/258d08d5-822d-40af-9d50-7fe6e0952e8b" />
+
 
 
 
